@@ -1,0 +1,30 @@
+.contact {
+  height: 100%;
+  padding-top: 30vh;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+      to right,
+      rgba($main-color, 1),
+      rgba($main-color, 0.5)
+    ),
+    url("../img/white-technology.jpg") center top;
+  background-size: cover;
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    font-size: 1.5rem;
+    width: 80%;
+    padding-left: 12vw;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}

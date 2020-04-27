@@ -288,6 +288,41 @@
   margin: 0.3rem 0;
 }
 
+.contact {
+  height: 100%;
+  padding-top: 30vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.5))), url("../img/white-technology.jpg") center top;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5)), url("../img/white-technology.jpg") center top;
+  background-size: cover;
+}
+
+.contact__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+  width: 80%;
+  padding-left: 12vw;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
