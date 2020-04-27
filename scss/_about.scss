@@ -1,7 +1,6 @@
 .about {
   padding-bottom: 2rem;
   height: 100%;
-
   align-items: center;
   text-align: center;
   background: linear-gradient(
@@ -16,12 +15,12 @@
   .social-icons {
     display: flex;
     flex-direction: column;
-    left: 0;
-    bottom: 0;
+    left: 5px;
+    bottom: 5px;
   }
 
   .foot {
-    transform: rotate(90deg) translate(-3rem, -4rem);
+    transform: rotate(90deg) translate(-2rem, -4rem);
   }
 
   &__profile {
@@ -37,12 +36,13 @@
 
   &__title {
     padding-bottom: 0.5rem;
+    color: $second-color;
   }
 
   &__text {
     justify-content: center;
-    width: 80%;
-    padding-bottom: 1rem;
+    width: 85%;
+    padding: 1rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid $text-color;
   }
@@ -50,7 +50,7 @@
 
 .jobs {
   width: 70vw;
-  margin: 1rem auto 1px auto;
+  margin: 0 auto 1rem auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;

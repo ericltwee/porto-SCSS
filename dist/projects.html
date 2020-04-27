@@ -7,9 +7,11 @@
       href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Titillium+Web:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
+
   <body>
     <header>
       <div class="menu-btn">
@@ -42,51 +44,15 @@
       </nav>
     </header>
     <main>
-      <section class="about">
-        <div class="about__profile">
-          <div><img class="about__pic" src="./img/wyatt.png" alt="" /></div>
-          <div class="about__text">
-            <h2 class="about__title">BIO</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-              culpa sapiente rerum dolores aliquam, fugiat eveniet commodi.
-            </p>
-          </div>
-        </div>
+      <section class="project">
+        
+        <canvas id="radar-chart" class="chart"></canvas>
 
-        <div class="jobs">
-          <div class="jobs__job">
-            <h2 class="text-secondary">2019 - Current</h2>
-            <h3>[ Company Name ]</h3>
-            <h6>[ Position ]</h6>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              vero dolores eum ut, culpa ullam quis quasi exercitationem in
-              adipisci.
-            </p>
-          </div>
-          <div class="jobs__job">
-            <h2 class="text-secondary">2017 - 2019</h2>
-            <h3>[ Company Name ]</h3>
-            <h6>[ Position ]</h6>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              vero dolores eum ut, culpa ullam quis quasi exercitationem in
-              adipisci.
-            </p>
-          </div>
-          <div class="jobs__job">
-            <h2 class="text-secondary">2016 - 2017</h2>
-            <h3>[ Company Name ]</h3>
-            <h6>[ Position ]</h6>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              vero dolores eum ut, culpa ullam quis quasi exercitationem in
-              adipisci.
-            </p>
-          </div>
-        </div>
+        <div class="project_text">
+          <h2 class="project_title">MY PROJECTS</h2>
+        </div></div>
 
+        
         <div class="social-icons">
           <a href="#!">
             <i class="fab fa-linkedin fa-2x"></i>
@@ -110,5 +76,44 @@
     </main>
     <script src="https://kit.fontawesome.com/99c833502b.js"></script>
     <script src="javascript/script.js"></script>
+    <script>
+      new Chart(document.getElementById("radar-chart"), {
+        type: "radar",
+        data: {
+          labels: [
+            "HTML & CSS",
+            "Javascript",
+            "Bootstrap",
+            "React",
+            "Python",
+            "SASS",
+          ],
+          datasets: [
+            {
+              label: "Coding Stats",
+              fill: true,
+              backgroundColor: "rgba(179,181,198,0.2)",
+              borderColor: "rgba(179,181,198,1)",
+              pointBorderColor: "#fff",
+              pointBackgroundColor: "rgba(179,181,198,1)",
+              data: [4.5, 4, 4, 3.5, 3, 3.5],
+            },
+          ],
+        },
+        options: {
+          // title: {
+          //   display: true,
+          //   text: "Languages",
+          // },
+          scale: {
+            ticks: {
+              suggestedMin: 0,
+              suggestedMax: 5,
+              stepSize: 1,
+            },
+          },
+        },
+      });
+    </script>
   </body>
 </html>

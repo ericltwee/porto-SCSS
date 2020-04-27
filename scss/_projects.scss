@@ -1,0 +1,35 @@
+.project {
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+      to right,
+      rgba($main-color, 1),
+      rgba($main-color, 0.5)
+    ),
+    url("../img/white-technology.jpg") center top;
+  background-size: cover;
+  padding-top: 5vh;
+
+  &_text {
+    padding: 1rem;
+    color: $text-color;
+  }
+
+  &_title {
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.foot {
+  bottom: 1.4rem;
+  transform: rotate(90deg) translate(-2rem, -4rem);
+}

@@ -220,13 +220,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  left: 0;
-  bottom: 0;
+  left: 5px;
+  bottom: 5px;
 }
 
 .about .foot {
-  -webkit-transform: rotate(90deg) translate(-3rem, -4rem);
-          transform: rotate(90deg) translate(-3rem, -4rem);
+  -webkit-transform: rotate(90deg) translate(-2rem, -4rem);
+          transform: rotate(90deg) translate(-2rem, -4rem);
 }
 
 .about__profile {
@@ -249,21 +249,22 @@
 
 .about__title {
   padding-bottom: 0.5rem;
+  color: #232323;
 }
 
 .about__text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
-  padding-bottom: 1rem;
+  width: 85%;
+  padding: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid #5a5a5a;
 }
 
 .jobs {
   width: 70vw;
-  margin: 1rem auto 1px auto;
+  margin: 0 auto 1rem auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -286,6 +287,46 @@
 
 .jobs__job h6 {
   margin: 0.3rem 0;
+}
+
+.project {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.5))), url("../img/white-technology.jpg") center top;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5)), url("../img/white-technology.jpg") center top;
+  background-size: cover;
+  padding-top: 5vh;
+}
+
+.project_text {
+  padding: 1rem;
+  color: #5a5a5a;
+}
+
+.project_title {
+  padding-bottom: 0.5rem;
+  border-bottom: solid 1px;
+}
+
+.project .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  left: 0;
+  bottom: 0;
+}
+
+.foot {
+  bottom: 1.4rem;
+  -webkit-transform: rotate(90deg) translate(-2rem, -4rem);
+          transform: rotate(90deg) translate(-2rem, -4rem);
 }
 
 .contact {
@@ -383,6 +424,7 @@ main {
 }
 
 main .social-icons {
+  display: inline;
   position: fixed;
   bottom: 1rem;
   left: 1rem;
