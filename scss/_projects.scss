@@ -27,6 +27,51 @@
     left: 0;
     bottom: 0;
   }
+
+  &_items {
+    width: 60vw;
+    margin: 1rem auto 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  &_item {
+    height: 20vh;
+    position: relative;
+    border-bottom: 5px solid $second-color;
+    cursor: pointer;
+  }
+}
+
+#project1 {
+  background: linear-gradient(
+      to right,
+      rgba($main-color, 1),
+      rgba($main-color, 0.5)
+    ),
+    url("../img/tic-tac-toe.png");
+  background-size: contain;
+}
+
+#project2 {
+  background: linear-gradient(
+      to right,
+      rgba($main-color, 1),
+      rgba($main-color, 0.5)
+    ),
+    url("../img/Next@gram.png");
+  background-size: contain;
+}
+
+#project3 {
+  background: linear-gradient(
+      to right,
+      rgba($main-color, 1),
+      rgba($main-color, 0.5)
+    ),
+    url("../img/gproject.jpg");
+  background-size: contain;
 }
 
 .foot {

@@ -323,6 +323,41 @@
   bottom: 0;
 }
 
+.project_items {
+  width: 60vw;
+  margin: 1rem auto 1rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.project_item {
+  height: 20vh;
+  position: relative;
+  border-bottom: 5px solid #232323;
+  cursor: pointer;
+}
+
+#project1 {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.5))), url("../img/tic-tac-toe.png");
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5)), url("../img/tic-tac-toe.png");
+  background-size: contain;
+}
+
+#project2 {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.5))), url("../img/Next@gram.png");
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5)), url("../img/Next@gram.png");
+  background-size: contain;
+}
+
+#project3 {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.5))), url("../img/gproject.jpg");
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5)), url("../img/gproject.jpg");
+  background-size: contain;
+}
+
 .foot {
   bottom: 1.4rem;
   -webkit-transform: rotate(90deg) translate(-2rem, -4rem);
@@ -331,7 +366,7 @@
 
 .contact {
   height: 100%;
-  padding-top: 30vh;
+  padding-top: 20vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
