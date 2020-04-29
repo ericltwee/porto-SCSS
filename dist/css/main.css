@@ -201,7 +201,6 @@
 
 .about {
   padding-bottom: 2rem;
-  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -290,7 +289,6 @@
 }
 
 .project {
-  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -309,6 +307,8 @@
 .project_title {
   padding-bottom: 0.5rem;
   border-bottom: solid 1px;
+  font-size: 200%;
+  font-weight: 800;
 }
 
 .project .social-icons {
@@ -336,25 +336,33 @@
 .project_item {
   height: 20vh;
   position: relative;
-  border-bottom: 5px solid #232323;
   cursor: pointer;
 }
 
+.project_btns {
+  padding-top: 30%;
+}
+
+.project_btns a {
+  color: #232323;
+  font-size: larger;
+}
+
 #project1 {
-  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.5))), url("../img/tic-tac-toe.png");
-  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5)), url("../img/tic-tac-toe.png");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.8))), url("../img/tic-tac-toe.png");
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url("../img/tic-tac-toe.png");
   background-size: contain;
 }
 
 #project2 {
-  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.5))), url("../img/Next@gram.png");
-  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5)), url("../img/Next@gram.png");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.8))), url("../img/Next@gram.png");
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url("../img/Next@gram.png");
   background-size: contain;
 }
 
 #project3 {
-  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.5))), url("../img/gproject.jpg");
-  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5)), url("../img/gproject.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.6))), url("../img/gproject.jpg");
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)), url("../img/gproject.jpg");
   background-size: contain;
 }
 
@@ -420,6 +428,43 @@
   }
   .nav .menu-nav__link {
     font-size: 1.5rem;
+  }
+  .about__pic {
+    width: 20vw;
+  }
+  .about__text {
+    width: 60vw;
+  }
+  .jobs {
+    width: 50vw;
+  }
+  #project1,
+  #project2,
+  #project3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .project_items {
+    width: 35vw;
+  }
+  .project_btns {
+    padding-top: 15%;
+  }
+  .chart {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about__pic {
+    width: 20vw;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .about__pic {
+    width: 20vw;
   }
 }
 

@@ -1,5 +1,4 @@
 .project {
-  height: 100%;
   align-items: center;
   text-align: center;
   background: linear-gradient(
@@ -19,6 +18,8 @@
   &_title {
     padding-bottom: 0.5rem;
     border-bottom: solid 1px;
+    font-size: 200%;
+    font-weight: 800;
   }
 
   .social-icons {
@@ -39,16 +40,24 @@
   &_item {
     height: 20vh;
     position: relative;
-    border-bottom: 5px solid $second-color;
     cursor: pointer;
+  }
+
+  &_btns {
+    padding-top: 30%;
+
+    a {
+      color: $second-color;
+      font-size: larger;
+    }
   }
 }
 
 #project1 {
   background: linear-gradient(
       to right,
-      rgba($main-color, 1),
-      rgba($main-color, 0.5)
+      rgba($main-color, 0.9),
+      rgba($main-color, 0.8)
     ),
     url("../img/tic-tac-toe.png");
   background-size: contain;
@@ -57,8 +66,8 @@
 #project2 {
   background: linear-gradient(
       to right,
-      rgba($main-color, 1),
-      rgba($main-color, 0.5)
+      rgba($main-color, 0.9),
+      rgba($main-color, 0.8)
     ),
     url("../img/Next@gram.png");
   background-size: contain;
@@ -67,8 +76,8 @@
 #project3 {
   background: linear-gradient(
       to right,
-      rgba($main-color, 1),
-      rgba($main-color, 0.5)
+      rgba($main-color, 0.9),
+      rgba($main-color, 0.6)
     ),
     url("../img/gproject.jpg");
   background-size: contain;

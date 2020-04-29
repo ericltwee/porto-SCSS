@@ -23,41 +23,47 @@
       }
     }
   }
+  .about__pic {
+    width: 20vw;
+  }
+
+  .about__text {
+    width: 60vw;
+  }
+
+  .jobs {
+    width: 50vw;
+  }
+
+  #project1,
+  #project2,
+  #project3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project_items {
+    width: 35vw;
+  }
+
+  .project_btns {
+    padding-top: 15%;
+  }
+
+  .chart {
+    height: 50%;
+    width: 50%;
+  }
 }
-//   .about__bio {
-//     font-size: 1.5rem;
-//   }
 
-//   .projects {
-//     &__bio-image {
-//       height: 40vh;
-//     }
-//     &__items {
-//       grid-template-columns: repeat(2, 1fr);
-//     }
-//     .text-secondary {
-//       font-size: 3rem;
-//     }
-//   }
+@include media-lg {
+  .about__pic {
+    width: 20vw;
+  }
+}
 
-//   .contact__list {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// }
-
-// @include media-lg {
-//   .projects {
-//     &__items {
-//       grid-template-columns: repeat(3, 1fr);
-//     }
-//   }
-//   .contact__list {
-//     grid-template-columns: repeat(3, 1fr);
-//   }
-// }
-
-// @include media-xl {
-//   .projects__bio-image {
-//     height: 50vh;
-//   }
-// }
+@include media-xl {
+  .about__pic {
+    width: 20vw;
+  }
+}
