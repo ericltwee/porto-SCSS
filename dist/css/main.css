@@ -351,21 +351,21 @@
 #project1 {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.8))), url("../img/tic-tac-toe.png");
   background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url("../img/tic-tac-toe.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 #project2 {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.8))), url("../img/Next@gram.png");
   background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url("../img/Next@gram.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 #project3 {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.6))), url("../img/gproject.jpg");
   background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)), url("../img/gproject.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
